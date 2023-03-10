@@ -6,7 +6,7 @@ require (
 	github.com/codeallergy/glue v1.0.2
 	github.com/codeallergy/grpc-multi-resolver v1.2.0
 	github.com/codeallergy/raftpb v1.0.1
-	github.com/codeallergy/recordpb v1.0.1
+	github.com/codeallergy/recordpb v1.0.2
 	github.com/grpc-ecosystem/go-grpc-middleware v1.3.0
 	github.com/pkg/errors v0.9.1
 	go.uber.org/atomic v1.10.0

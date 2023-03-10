@@ -553,8 +553,8 @@ github.com/codeallergy/grpc-multi-resolver v1.2.0 h1:nFjM6zPc6mNmn3jx0DioDyUU1XY
 github.com/codeallergy/grpc-multi-resolver v1.2.0/go.mod h1:hQhj4urWzV1ufJDj+D0HyNpuunBeIhigJEZ//C+Wn3s=
 github.com/codeallergy/raftpb v1.0.1 h1:0ICklYQA2cW14BuY59UeoAnm+Oc6tdO+fPlUS6vMbfI=
 github.com/codeallergy/raftpb v1.0.1/go.mod h1:BXEAqPq/GzespnpA07PVbzZJik4XOTazJkI8TVsppnw=
-github.com/codeallergy/recordpb v1.0.1 h1:fDbAYSKoA2BLREua/z4kIamjt8oK164M0TaYwnOBcJ8=
-github.com/codeallergy/recordpb v1.0.1/go.mod h1:Ny3GQU8zIhvBVLHhIet80PAJQYoEHtoIeAI1fIU5QHA=
+github.com/codeallergy/recordpb v1.0.2 h1:2mPaFbW1mMdCxeLOkpM+R/gk65m04B3oB2sU7ZT8ZFs=
+github.com/codeallergy/recordpb v1.0.2/go.mod h1:Ny3GQU8zIhvBVLHhIet80PAJQYoEHtoIeAI1fIU5QHA=
 github.com/creack/pty v1.1.9/go.mod h1:oKZEueFk5CKHvIhNR5MUki03XCEU+Q6VDXinZuGJ33E=
 github.com/davecgh/go-spew v1.1.0/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
