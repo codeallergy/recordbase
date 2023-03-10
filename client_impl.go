@@ -19,7 +19,6 @@ import (
 	"github.com/codeallergy/recordpb"
 	"go.uber.org/atomic"
 	"google.golang.org/grpc"
-	"google.golang.org/protobuf/types/known/emptypb"
 	"io"
 	"sync"
 )
@@ -43,7 +42,7 @@ func Create(conn *grpc.ClientConn) Client {
 	}
 }
 
-func (t *implClient) GetCounts(ctx context.Context, in *emptypb.Empty) (*recordpb.Counts, error) {
+func (t *implClient) GetCounts(ctx context.Context, in *recordpb.TenantRequest) (*recordpb.Counts, error) {
 
 	ctx, cancel := context.WithCancel(ctx)
 
@@ -217,7 +216,7 @@ func (t *implClient) AddKeyRange(ctx context.Context, in *recordpb.KeyRange) (er
 
 }
 
-func (t *implClient) GetKeyCapacity(ctx context.Context) (*recordpb.KeyCapacity, error) {
+func (t *implClient) GetKeyCapacity(ctx context.Context, in *recordpb.TenantRequest) (*recordpb.KeyCapacity, error) {
 
 	ctx, cancel := context.WithCancel(ctx)
 	handle := t.addCancelFn(cancel)
@@ -227,7 +226,7 @@ func (t *implClient) GetKeyCapacity(ctx context.Context) (*recordpb.KeyCapacity,
 		cancel()
 	}()
 
-	return t.client.GetKeyCapacity(ctx, &emptypb.Empty{})
+	return t.client.GetKeyCapacity(ctx, in)
 }
 
 func (t *implClient) MapGet(ctx context.Context, in *recordpb.MapGetRequest) (*recordpb.MapEntry, error) {

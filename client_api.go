@@ -18,7 +18,6 @@ import (
 	"context"
 	"github.com/codeallergy/glue"
 	"github.com/codeallergy/recordpb"
-	"google.golang.org/protobuf/types/known/emptypb"
 	"reflect"
 )
 
@@ -44,7 +43,7 @@ type Client interface {
 	//
 	// Gets metadata about using attributes
 	//
-	GetCounts(ctx context.Context, in *emptypb.Empty) (*recordpb.Counts, error)
+	GetCounts(ctx context.Context, in *recordpb.TenantRequest) (*recordpb.Counts, error)
 
 	//
 	// Quick user lookup request
@@ -89,7 +88,7 @@ type Client interface {
 	//
 	// Gets user id ranges and etc
 	//
-	GetKeyCapacity(ctx context.Context) (*recordpb.KeyCapacity, error)
+	GetKeyCapacity(ctx context.Context, in *recordpb.TenantRequest) (*recordpb.KeyCapacity, error)
 
 	//
 	// Get map value associated with the record
